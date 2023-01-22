@@ -83,3 +83,74 @@ header {
     font-size: 18px;
     color: var(--text-color);
 }
+/* My Skill */
+.my-skill {
+    text-align: center;
+    padding: 8%;
+    background-color: var(--light-gray);
+}
+.my-skill h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.progress-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+/* Recent Work */
+.recent-work {
+    text-align: center;
+    padding: 4% 8%;
+}
+.recent-work h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-bottom: 52px;
+}
+.recent-work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.card {
+    height: 200px;
+    background-color: #23272A;
+    border-radius: 5px;
+}
+/* Contact */
+.contact {
+    padding: 8%;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+.contact-container {
+    margin: 0 30%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact-container input {
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contact-container textarea {
+    margin-top: 20px;
+    padding: 5px 10px 0 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.submit-button {
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 20px;
+    padding: 4px 20px;
+    width: 100px;
+    border: var(--main-color);
+}
