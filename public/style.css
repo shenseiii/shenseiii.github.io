@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-color: #5865F2;
+    --text-color: #23272A;
+    --light-gray: #F6F6F6;
+}
+/* Header */
+header {
+    padding: 0 6%;
+}
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.nav-link {
+    display: flex;
+}
+.nav-link li {
+    list-style: none;
+    padding: 10px;
+}
+.nav-link li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
