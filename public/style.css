@@ -89,19 +89,82 @@ header {
 }
 /* My Skill */
 .my-skill {
-    text-align: center;
     padding: 8%;
-    /* background-color: var(--light-gray); */
+    background-color: var(--light-gray);
 }
 .my-skill h3 {
+    text-align: center;
     font-size: 22px;
     font-weight: 500;
     color: var(--text-color);
 }
 .progress-box {
+    text-align: center;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    margin-top: 70px;
+    grid-template-columns: repeat(2, 150px); 
+    gap: 3rem 30%;
 }
+/* circle */
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+  }
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: var(--text-color);
+  line-height: 120px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: white;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+.mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: var(--main-color);
+  }
+  
+  .mask.full-1,
+  .circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(153deg);
+  }
+  
+  @keyframes fill-1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(153deg);
+    }
+  }
 /* Recent Work */
 .recent-work {
     text-align: center;
