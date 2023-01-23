@@ -39,7 +39,8 @@ header {
     color: var(--text-color);
     text-decoration: none;
 }
-.nav-link .active-link:active {
+.nav-link .active-link  {
+    border-bottom: 4px solid #5865F2;
     color: var(--main-color);
 }
 /* intro Section */
@@ -90,7 +91,7 @@ header {
 .my-skill {
     text-align: center;
     padding: 8%;
-    background-color: var(--light-gray);
+    /* background-color: var(--light-gray); */
 }
 .my-skill h3 {
     font-size: 22px;
@@ -114,7 +115,7 @@ header {
 }
 .recent-work-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     gap: 1rem;
 }
 .card {
