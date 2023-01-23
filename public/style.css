@@ -3,9 +3,6 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body {
-    padding-bottom: 200px;
-}
 :root {
     --main-color: #5865F2;
     --text-color: #23272A;
@@ -188,17 +185,46 @@ header {
 }
 /* Contact */
 .contact {
-    padding: 8%;
-    text-align: center;
+    padding: 5% 18% 5% 18% ;
     background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
 }
-.contact-container {
-    margin: 0 30%;
+.contact-information h4 {
+    font-size: 22px;
+}
+.contact-information h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.contact-info {
+    padding: 20px ;
+}
+.contact-info h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.contact-info p {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-left: 45px;
+}
+.contact-box {
+    margin: 0 10%;
     display: flex;
     flex-direction: column;
-   
 }
-.contact-container input {
+.contact-img {
+    display: flex;
+    align-items: center;
+}
+.contact-img img {
+    width: 30px;
+    margin-right: 20px;
+}
+.contact-box input {
     height: 30px;
     padding-left: 10px;
     margin-top: 20px;
@@ -206,12 +232,13 @@ header {
     outline: none;
     border: 1px solid #ccc;
 }
-.contact-container textarea {
+.contact-box textarea {
     margin-top: 20px;
     padding: 5px 10px 0 10px;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 5px;
+    height: 100px;
 }
 .submit-button {
     background-color: var(--main-color);
@@ -220,4 +247,57 @@ header {
     padding: 4px 20px;
     width: 100px;
     border: var(--main-color);
+}
+/* Footer */
+footer {
+    padding: 3%;
+    background-color: var(--text-color);
+}
+.footer {
+    text-align: center;
+}
+.footer h1{
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.foot-link {
+    margin-top: 22px;
+}
+.foot-link ul {
+    display: flex;
+    justify-content: center;
+}
+.foot-link ul li {
+    list-style: none;
+    padding: 0 12px;
+}
+.foot-link ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+.foot-link ul li a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.s-m-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+.s-m-img img {
+    width: 30px;
+    padding: 0 12px;
+}
+/* credential */
+.credidential {
+    padding: 10px ;
+    text-align: center;
+    font-size: 14px;
 }
