@@ -14,8 +14,8 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">Josh</div>
-        <img class="hamburger-icon" src="icon/more.png" alt="">
-        <ul class="nav-link">
+        <img class="hamburger-icon" src="icon/more.png" onclick="openMenu()">
+        <ul id="sideMenu" class="nav-link sidemenu-in" >
             <li class="" >
                 <a href="#">Home</a>
             </li>
@@ -28,7 +28,7 @@
             <li>
                 <a href="#">Contact</a>
             </li>
-            <img class="close-menu" src="icon/close.png" alt="">
+            <img class="close-menu" src="icon/close.png" onclick="closeMenu()">
         </ul>
     </header>
     <!-- end of Header -->
@@ -89,7 +89,7 @@
                   </div>
             </div>
             <div class="skil-progress-box">
-                <h4>GRAPHIC DESIGNING</h4>
+                <h4>GRAPHIC</h4>
                 <div class="circle-wrap">
                     <div class="circle">
                       <div class="mask full-1">
