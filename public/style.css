@@ -109,12 +109,10 @@ header {
     justify-content: center;
     display: grid;
     margin-top: 70px;
-    gap: 20vh;
+    gap: 80px 20vh;
     grid-template-columns: repeat(2, 150px); 
 }
 /* circle */
-.circle {
-}
 .circle-wrap {
     display: grid;
     grid-template-columns: repeat(1, 160px);
